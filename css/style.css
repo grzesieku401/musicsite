@@ -1,3 +1,170 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
+
+/* ----HEADER---- */
+
+.site-main,
+.site-header,
+.site-footer{
+    width: 100%;
+}
+
+.site-header{
+    position: fixed;
+    background-color: #333333;
+    color: #fff;
+}
+
+.site-header_nav{
+    height: 45px;
+}
+
+.site-header_nav-option{
+    padding: 16px 25px 10px 18px;
+    display: inline-block;
+}
+
+.site-header .site-header_burger{
+    display: none;
+}
+
+.site-header_nav-option:hover{
+    padding-bottom: 15px;;
+    background-color: #3f3f3f;
+}
+
+a:link,
+a:active,
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 2.3rem;
+}
+p{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* ----MAIN---- */
+
+.site-main_section1{
+    height: 100vh;
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(32, 82%, 38%);
+    text-align: center;
+}
+
+.site-main_section1-title{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-top: 26vh;
+    padding-bottom: 40px;
+}
+
+.site-main_section1-subtitle{
+    font-weight: bold;
+    padding: 0px 50px 30px 50px;
+
+}
+
+.site-main_section1-paragraph{
+   padding: 0 50px; 
+}
+
+.site-main_section2{
+    background-color: #252529;
+    text-align: center;
+    color: #fff;
+}
+
+.site-main_section2-title{
+    padding: 40px;
+    font-weight: bold;
+}
+
+.site-main_section2-subtitle{
+    padding-bottom: 30px;
+}
+
+.site-main_section2-paragraph{
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 2rem;
+    padding: 25px;
+}
+
+.site-main_section2-link{
+    display: inline-block;
+    background-color: red;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.site-main_section2-desc{
+    padding: 20px;
+    font-size: 1rem;
+
+}
+
+.site-main_section2-img{
+    width: 100%;
+    max-width: 1100px;
+    padding-bottom: 30px;
+}
+
+/*----MEDIA----*/
+@media all and (max-width: 580px){
+
+    /* ----HEADER---- */
+
+    .site-header{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .site-header_nav-option{
+        display: none;
+    }
+    .site-header_yourtunes{
+        display: inline-block;
+    }
+    .site-header_nav-option:hover{  
+        padding-bottom: 15px;
+        background-color:  #333333;
+    }
+    .site-header .site-header_burger{
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+    
+    /* ----MAIN---- */
+    .site-main_section1{
+        height: 50vh;
+    }
+    .site-main_section1-title{
+        margin-top: 45px;
+        padding-top: 25px;
+        overflow: inherit;
+    }
+
+    .site-main_section1-paragraph{
+        display: none;
+    }
+
+
+}
